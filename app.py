@@ -10,6 +10,19 @@ import streamlit as st
 data_file = 'SMSSpamCollection.txt'
 data = pd.read_csv(data_file, sep = '\t', header = None, names = ['label', 'sms'])
 #data.head()
+info1 = '''
+Have you ever received a text message from a company or person you recognized, but it didn’t seem quite “right”? 
+
+Spam text messages (also known as phishing texts or “smishing” – SMS phishing) are tools criminals use to trick you into giving them your personal or financial information. 
+
+Criminals use phishing text messages to attain usernames and passwords, social security numbers, credit card numbers and PINs to commit fraud or identity theft. Other attacks focus on duping people into downloading viruses or malware by clicking seemingly innocent links.
+'''
+info2 = '''
+SMS spam (sometimes called cell phone spam) is any junk message delivered to a mobile phone as text messaging through the Short Message Service (SMS). the systems of the country's major service provider, were overcome by the volume of SMS spam, causing users' screens to freeze and spreading programs that caused the phones to dial emergency numbers.
+Text messaging has greatly increased in popularity in the past five years and the government is trying to keep up with rapidly changing technology. Although SMS spam is less prevalent than email spam, it still accounts for roughly 1% of texts sent in the United States and 30% of text messages sent in parts of Asia. In the United States, SMS spam messages have been illegal under the Telephone Consumer Protection Act since 2004.
+Spam legislation is non-existent in India. The much-touted Information Technology Act of 2000 does not discuss the issue of spamming at all. It only refers to punishment meted out to a person, who after having secured access to any electronic material without the consent of the person concerned, discloses such electronic material to any other person. It does not have any bearing on violation of individual's privacy in Cyberspace. The illegality of spamming is not considered.
+Citizens who receive unsolicited SMS messages can now bring the solicitors to small claims court. In 2009, China’s three main mobile phone operators (China Telecom, China Mobile Ltd and China Unicom) signed an agreement to combat mobile spam by setting limits on the number of text messages sent each hour.
+'''
 
 nltk.download('stopwords')
 nltk.download('punkt')
@@ -67,7 +80,12 @@ menu = ["Home", "Predict Spam/Ham", "About"]
 choice = st.sidebar.selectbox("Menu:", menu)
 
 if choice == menu[0]:
-    st.write('Welcome!')
+    st.write("""
+#    Welcome!
+    """)
+    st.header("Spam text messages/SMS")
+    st.write(info2)
+    st.write(info1)
 elif choice == menu[1]:
     if st.checkbox("Upload Dataset"):
         dataset = st.file_uploader("Drop your spam/ham data set here", type=["csv"])
