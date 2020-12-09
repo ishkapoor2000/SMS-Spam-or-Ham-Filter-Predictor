@@ -7,7 +7,7 @@ import string
 import nltk
 import streamlit as st
 
-data_file = 'C:/Users/ISH KAPOOR/Desktop/SMS-Spam-or-Ham-Filter-Predictor-main/SMSSpamCollection.txt'
+data_file = 'SMSSpamCollection.txt'
 data = pd.read_csv(data_file, sep = '\t', header = None, names = ['label', 'sms'])
 #data.head()
 
