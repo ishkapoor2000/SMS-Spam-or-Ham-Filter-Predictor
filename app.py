@@ -77,4 +77,10 @@ elif choice == menu[1]:
     processed_input = pre_process(user_input)
     prd = predict(processed_input)
 else:
-    st.write('Enjoy!')
+    st.write("""
+    #Enjoy!
+    """)
+    st.write("""
+    ## View source code at:
+    """)
+    st.write("https://github.com/ishkapoor2000/SMS-Spam-or-Ham-Filter-Predictor")
