@@ -1,2 +1,6 @@
 # SMS-Spam-or-Ham-Filter-Predictor
-Predict if your SMS is a spam or a ham. Be safe from SMS threats!
+
+## Deployed on Heroku('https://dashboard.heroku.com/apps')
+###  "https://sms-spam-ham-filter-predict.herokuapp.com/"
+
+Predict if your SMS is a spam or a ham message. Be safe from spam SMS threats!
