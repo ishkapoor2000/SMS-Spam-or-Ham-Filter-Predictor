@@ -95,6 +95,7 @@ elif choice == menu[1]:
     processed_input = pre_process(user_input)
     prd = predict(processed_input)
 else:
+    st.markdown("#Enjoy!")
     st.write("""
     #Enjoy!
     """)
