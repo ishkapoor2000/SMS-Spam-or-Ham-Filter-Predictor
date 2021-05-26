@@ -96,7 +96,7 @@ elif choice == menu[1]:
     prd = predict(processed_input)
 else:
     st.markdown("# Enjoy!")
-    st.markdown("[![this is an image link](https://discourse-cloud-file-uploads.s3.dualstack.us-west-2.amazonaws.com/business7/uploads/streamlit/original/1X/00ddf47b5bf61fb18e1c36fc6680b1ee0c7778fb.png)]")
+    st.markdown("![this is an image link](https://discourse-cloud-file-uploads.s3.dualstack.us-west-2.amazonaws.com/business7/uploads/streamlit/original/1X/00ddf47b5bf61fb18e1c36fc6680b1ee0c7778fb.png)")
     st.write("""
     # E njoy!
     """)
