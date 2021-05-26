@@ -96,6 +96,7 @@ elif choice == menu[1]:
     prd = predict(processed_input)
 else:
     st.markdown("# Enjoy!")
+    st.markdown("[![this is an image link](upload://7FxfXwDqJIZdYJ2QYADywvNRjB.png)]")
     st.write("""
     # E njoy!
     """)
