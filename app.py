@@ -109,3 +109,6 @@ else:
     ## View source code at:
     """)
     st.write("https://github.com/ishkapoor2000/SMS-Spam-or-Ham-Filter-Predictor")
+    happy = ["https://happy-music-playlist.ishkapoor.repl.co/", "https://image0.flaticon.com/icons/png/128/4566/4566044.png"]
+    happy_markdown = "[![](" + happy[1] + ")](" + happy[0] + ")"
+    st.markdown(happy_markdown)
