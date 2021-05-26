@@ -96,10 +96,14 @@ elif choice == menu[1]:
     prd = predict(processed_input)
 else:
     st.markdown("# Enjoy!")
-    st.markdown("![this is an image link](https://discourse-cloud-file-uploads.s3.dualstack.us-west-2.amazonaws.com/business7/uploads/streamlit/original/1X/00ddf47b5bf61fb18e1c36fc6680b1ee0c7778fb.png)(https://streamlit.io)")
-    st.markdown("[![this is an image link](https://discourse-cloud-file-uploads.s3.dualstack.us-west-2.amazonaws.com/business7/uploads/streamlit/original/1X/00ddf47b5bf61fb18e1c36fc6680b1ee0c7778fb.png)](https://streamlit.io)")
+    img_link = "https://discourse-cloud-file-uploads.s3.dualstack.us-west-2.amazonaws.com/business7/uploads/streamlit/original/1X/00ddf47b5bf61fb18e1c36fc6680b1ee0c7778fb.png"
+    website_link = "https://streamlit.io"
+    link_text = "[![](" + img_link + ")](" + website_link + ")"
+    st.markdown("[![](https://discourse-cloud-file-uploads.s3.dualstack.us-west-2.amazonaws.com/business7/uploads/streamlit/original/1X/00ddf47b5bf61fb18e1c36fc6680b1ee0c7778fb.png)](https://streamlit.io)")
+    st.markdown("# Below is a success!")
+    st.markdown(link_text)
     st.write("""
-    # E njoy!
+    # Enjoy!
     """)
     st.write("""
     ## View source code at:
