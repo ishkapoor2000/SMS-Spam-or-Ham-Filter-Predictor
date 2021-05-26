@@ -7,6 +7,8 @@ import string
 import nltk
 import streamlit as st
 
+ st.set_page_config(page_title="Spam-Ham Filter Predictor Web App",page_icon="🧊")
+
 data_file = 'SMSSpamCollection.txt'
 data = pd.read_csv(data_file, sep = '\t', header = None, names = ['label', 'sms'])
 #data.head()
